@@ -90,6 +90,17 @@ When saving memory:
 4. If C-drive global memory is not writable, explicitly remind the user to sync it manually from `D:\文档\前端\skills\codex-memory` to `C:\Users\ASUS\.codex\skills\codex-memory`.
 5. Do not silently update only one layer when the information belongs in more than one layer.
 
+## Append-First Rule
+
+Memory should not be casually deleted, cleared, or overwritten.
+
+Default behavior:
+
+- Prefer appending dated entries, corrections, or new sections.
+- Preserve older useful context unless the user explicitly asks to remove it or it is clearly unsafe to keep.
+- For corrections, add a dated correction entry when the historical trail is useful.
+- Ask before deleting memory files, clearing sections, or overwriting large parts of any memory layer.
+
 ## Main Priority
 
 - D-drive local project memory is the quick index and editable source in this workspace.
