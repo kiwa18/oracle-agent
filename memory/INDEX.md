@@ -57,6 +57,7 @@ For D-drive local project memory / C-drive global memory / GitHub memory linkage
   - global version: `C:\Users\ASUS\.codex\skills\codex-memory\references\memory.md`
   - GitHub archive: `kiwa18/oracle-agent/memory/**`
 - Update rule: update the D-drive project/source memory and GitHub memory when relevant; update C-drive global memory if writable, otherwise remind the user to manually sync `D:\文档\前端\skills\codex-memory` into `C:\Users\ASUS\.codex\skills\codex-memory`.
+- Append-first rule: prefer dated additions, corrections, and new sections; ask before deleting, clearing, or overwriting large parts of any memory layer.
 - Encoding rule: keep memory files as UTF-8 and avoid shell rewrites that may corrupt Chinese text through a legacy Windows code page.
 
 ## Memory Policy
