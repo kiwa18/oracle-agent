@@ -19,6 +19,10 @@ For A-share signal/backtest work, read:
 
 - `memory/projects/a-share-event-backtest.md`
 
+For GitHub operation preferences and confirmation boundaries, read:
+
+- `memory/policies/github-operation-preferences.md`
+
 ## Project Memory Files
 
 ### A-share Event Backtest
@@ -27,6 +31,14 @@ For A-share signal/backtest work, read:
 - Status: architecture and research memory created
 - Core idea: the TongDaXin indicator only provides buy-point signals. Do not assume same-day buying and do not invent a sell indicator in V1. Treat every signal as an event origin, then study future path windows to find which buy delay and holding/observation windows work best.
 - Main data direction: use local TongDaXin historical daily data as the primary price source; use open-source data tools such as `a-stock-data`, `mootdx`, `pytdx`, and `MyTT` as auxiliary components.
+
+## Policy Memory Files
+
+### GitHub Operation Preferences
+
+- File: `memory/policies/github-operation-preferences.md`
+- Standing preference: for the GitHub account `kiwa18`, Codex may directly create and update files, directories, and repository content across all accessible repositories and paths without asking each time.
+- Ask first only for destructive changes, changes that overwrite/restructure more than roughly one third of a repository's main framework or subject structure, secrets/privacy-sensitive content, repository permission/security changes, or actions where the platform requires confirmation.
 
 ## Memory Policy
 
