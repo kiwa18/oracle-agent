@@ -28,7 +28,7 @@ For GitHub operation preferences and confirmation boundaries, read:
 
 - `memory/policies/github-operation-preferences.md`
 
-For local/C-drive/GitHub memory linkage and sync rules, read:
+For D-drive local project memory / C-drive global memory / GitHub memory linkage and sync rules, read:
 
 - `memory/policies/memory-sync-policy.md`
 
@@ -52,8 +52,12 @@ For local/C-drive/GitHub memory linkage and sync rules, read:
 ### Memory Sync Policy
 
 - File: `memory/policies/memory-sync-policy.md`
-- Standing preference: whenever the user mentions memory/记忆, Codex should treat local workspace or E-drive memory, C-drive global Codex memory, and GitHub memory archive as linked layers.
-- Update rule: update local/source memory and GitHub memory when relevant; update C-drive global memory if writable, otherwise remind the user to manually sync the workspace/source Skill into `C:\Users\ASUS\.codex\skills\codex-memory`.
+- Standing preference: whenever the user mentions memory/记忆, Codex should treat these as linked layers:
+  - local project version: `D:\文档\前端\skills\codex-memory\references\memory.md`
+  - global version: `C:\Users\ASUS\.codex\skills\codex-memory\references\memory.md`
+  - GitHub archive: `kiwa18/oracle-agent/memory/**`
+- Update rule: update the D-drive project/source memory and GitHub memory when relevant; update C-drive global memory if writable, otherwise remind the user to manually sync `D:\文档\前端\skills\codex-memory` into `C:\Users\ASUS\.codex\skills\codex-memory`.
+- Encoding rule: keep memory files as UTF-8 and avoid shell rewrites that may corrupt Chinese text through a legacy Windows code page.
 
 ## Memory Policy
 
