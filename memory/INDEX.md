@@ -14,6 +14,11 @@ When the user says any of the following, read the relevant file before answering
 - `调出回测记忆`
 - `读取GitHub记忆`
 - `看回测架构`
+- `记忆`
+- `记住`
+- `记录`
+- `记忆存档`
+- `存入记忆`
 
 For A-share signal/backtest work, read:
 
@@ -22,6 +27,10 @@ For A-share signal/backtest work, read:
 For GitHub operation preferences and confirmation boundaries, read:
 
 - `memory/policies/github-operation-preferences.md`
+
+For local/C-drive/GitHub memory linkage and sync rules, read:
+
+- `memory/policies/memory-sync-policy.md`
 
 ## Project Memory Files
 
@@ -39,6 +48,12 @@ For GitHub operation preferences and confirmation boundaries, read:
 - File: `memory/policies/github-operation-preferences.md`
 - Standing preference: for the GitHub account `kiwa18`, Codex may directly create and update files, directories, and repository content across all accessible repositories and paths without asking each time.
 - Ask first only for destructive changes, changes that overwrite/restructure more than roughly one third of a repository's main framework or subject structure, secrets/privacy-sensitive content, repository permission/security changes, or actions where the platform requires confirmation.
+
+### Memory Sync Policy
+
+- File: `memory/policies/memory-sync-policy.md`
+- Standing preference: whenever the user mentions memory/记忆, Codex should treat local workspace or E-drive memory, C-drive global Codex memory, and GitHub memory archive as linked layers.
+- Update rule: update local/source memory and GitHub memory when relevant; update C-drive global memory if writable, otherwise remind the user to manually sync the workspace/source Skill into `C:\Users\ASUS\.codex\skills\codex-memory`.
 
 ## Memory Policy
 
