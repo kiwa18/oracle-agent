@@ -2,11 +2,18 @@
 
 Last updated: 2026-06-08 Asia/Shanghai
 
-This directory is the GitHub long-term memory layer for Codex and other AI agents. Local Codex memory should use this file as the entry index when a project question needs durable architecture, research, or decision context.
+This directory is the GitHub long-term memory layer for Codex and other AI agents. Use this file as the short entry index, then use `memory/STRUCTURE.md` for the full tree map.
 
-## How To Use
+## Start Here
 
-When the user says any of the following, read the relevant file before answering or continuing work:
+- Full tree map: `memory/STRUCTURE.md`
+- E-drive local quick memory: `E:\codex\skills-memory\codex-memory\references\memory.md`
+- C-drive global runtime memory: `C:\Users\ASUS\.codex\skills\codex-memory\references\memory.md`
+- GitHub archive root: `kiwa18/oracle-agent/memory/**`
+
+## Trigger Phrases
+
+When the user says any of the following, read the relevant memory before answering or continuing work:
 
 - `继续回测输出`
 - `继续回策输出`
@@ -19,22 +26,36 @@ When the user says any of the following, read the relevant file before answering
 - `记录`
 - `记忆存档`
 - `存入记忆`
+- `登录前看记忆`
+- `开始前看记忆`
+- `看一下记忆`
 
-For A-share signal/backtest work, read:
+## Local Memory Files
 
-- `memory/projects/a-share-event-backtest.md`
+```text
+E:\codex\skills-memory\codex-memory\references
+├─ memory.md   # main quick index, path rules, project pointers
+├─ daily.md    # daily preferences, rhythm, tone, familiarity
+└─ prompts.md  # reusable GPT/Claude/review/memory prompt templates
+```
 
-For GitHub operation preferences and confirmation boundaries, read:
+## Skill Packages
 
-- `memory/policies/github-operation-preferences.md`
+```text
+E:\codex\skills-memory
+├─ codex-memory
+├─ gpt-architecture-review
+└─ real-time-context
+```
 
-For D-drive local project memory / C-drive global memory / GitHub memory linkage and sync rules, read:
+Installed global skill path:
 
-- `memory/policies/memory-sync-policy.md`
-
-For Chrome/Codex browser connection preferences, read:
-
-- `memory/policies/browser-connection-preferences.md`
+```text
+C:\Users\ASUS\.codex\skills
+├─ codex-memory
+├─ gpt-architecture-review
+└─ real-time-context
+```
 
 ## Project Memory Files
 
@@ -47,32 +68,18 @@ For Chrome/Codex browser connection preferences, read:
 
 ## Policy Memory Files
 
-### GitHub Operation Preferences
+- GitHub operation preferences: `memory/policies/github-operation-preferences.md`
+- Memory sync policy: `memory/policies/memory-sync-policy.md`
+- Browser connection preferences: `memory/policies/browser-connection-preferences.md`
+- Daily collaboration memory: `memory/policies/daily-collaboration-memory.md`
+- Prompt memory: `memory/policies/prompt-memory.md`
+- GPT architecture review: `memory/policies/gpt-architecture-review.md`
+- Real-time context: `memory/policies/real-time-context.md`
 
-- File: `memory/policies/github-operation-preferences.md`
-- Standing preference: for the GitHub account `kiwa18`, Codex may directly create and update files, directories, and repository content across all accessible repositories and paths without asking each time.
-- Ask first only for destructive changes, changes that overwrite/restructure more than roughly one third of a repository's main framework or subject structure, secrets/privacy-sensitive content, repository permission/security changes, or actions where the platform requires confirmation.
+## Update Rule
 
-### Memory Sync Policy
-
-- File: `memory/policies/memory-sync-policy.md`
-- Standing preference: whenever the user mentions memory/记忆, Codex should treat these as linked layers:
-  - local project version: `D:\文档\前端\skills\codex-memory\references\memory.md`
-  - global version: `C:\Users\ASUS\.codex\skills\codex-memory\references\memory.md`
-  - GitHub archive: `kiwa18/oracle-agent/memory/**`
-- Update rule: update the D-drive project/source memory and GitHub memory when relevant; update C-drive global memory if writable, otherwise remind the user to manually sync `D:\文档\前端\skills\codex-memory` into `C:\Users\ASUS\.codex\skills\codex-memory`.
-- Append-first rule: prefer dated additions, corrections, and new sections; ask before deleting, clearing, or overwriting large parts of any memory layer.
-- Encoding rule: keep memory files as UTF-8 and avoid shell rewrites that may corrupt Chinese text through a legacy Windows code page.
-
-### Browser Connection Preferences
-
-- File: `memory/policies/browser-connection-preferences.md`
-- Standing preference: default to the user's existing Chrome debugging instance at `http://127.0.0.1:9222`, using fixed AI Chrome profile `C:\codex-chrome`.
-- Practical rule: prefer reusing this browser instance; do not automatically create a new built-in Chrome, temporary profile, or separate browser unless the user explicitly asks.
-
-## Memory Policy
-
-- Keep this index short.
-- Put detailed design, decisions, references, and next steps in project-specific files.
-- Do not store private formulas, credentials, tokens, or full proprietary strategy logic here.
-- If the user later provides the TongDaXin formula, store only the conversion notes and file location unless the user explicitly asks to store the full formula.
+- Keep this index short and use `memory/STRUCTURE.md` for the full tree.
+- For durable rules and project decisions, update both E-drive local memory and GitHub memory when possible.
+- If Codex cannot write E-drive or C-drive from the current sandbox, update GitHub and remind the user which local layer still needs syncing.
+- Unless the user explicitly asks for replacement, do not delete or reduce memory; add structured dated entries instead.
+- Do not store private formulas, credentials, tokens, cookies, or full proprietary strategy logic here.
