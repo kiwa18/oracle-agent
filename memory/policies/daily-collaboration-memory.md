@@ -1,6 +1,6 @@
 # Daily Collaboration Memory
 
-Last updated: 2026-06-08 Asia/Shanghai
+Last updated: 2026-06-09 Asia/Shanghai
 
 This file mirrors the E-drive daily memory layer for ordinary preferences, collaboration habits, tone cues, and long-term familiarity notes.
 
@@ -11,6 +11,7 @@ Source local file:
 ## Communication Style
 
 - User prefers Chinese conversation.
+- User is female and prefers being addressed as `kiwa`; do not call her `老哥`.
 - User prefers direct, non-technical explanations when fixing tools, memory, browser, sandbox, or workflow problems.
 - User dislikes being overwhelmed by long branching steps when the problem is simple.
 - When the user is irritated, confused, or overloaded, first simplify the issue into one clear sentence, then give the next concrete action.
@@ -56,4 +57,5 @@ Source local file:
 
 ## Changelog
 
+- 2026-06-09: Added preferred address: user is female, use `kiwa`, do not call her `老哥`.
 - 2026-06-08: Created GitHub daily collaboration memory mirror for the clean E-drive memory structure.
