@@ -1,6 +1,6 @@
 # Memory Index
 
-Last updated: 2026-06-06 Asia/Shanghai
+Last updated: 2026-06-08 Asia/Shanghai
 
 This directory is the GitHub long-term memory layer for Codex and other AI agents. Local Codex memory should use this file as the entry index when a project question needs durable architecture, research, or decision context.
 
@@ -32,6 +32,10 @@ For D-drive local project memory / C-drive global memory / GitHub memory linkage
 
 - `memory/policies/memory-sync-policy.md`
 
+For Chrome/Codex browser connection preferences, read:
+
+- `memory/policies/browser-connection-preferences.md`
+
 ## Project Memory Files
 
 ### A-share Event Backtest
@@ -59,6 +63,12 @@ For D-drive local project memory / C-drive global memory / GitHub memory linkage
 - Update rule: update the D-drive project/source memory and GitHub memory when relevant; update C-drive global memory if writable, otherwise remind the user to manually sync `D:\文档\前端\skills\codex-memory` into `C:\Users\ASUS\.codex\skills\codex-memory`.
 - Append-first rule: prefer dated additions, corrections, and new sections; ask before deleting, clearing, or overwriting large parts of any memory layer.
 - Encoding rule: keep memory files as UTF-8 and avoid shell rewrites that may corrupt Chinese text through a legacy Windows code page.
+
+### Browser Connection Preferences
+
+- File: `memory/policies/browser-connection-preferences.md`
+- Standing preference: default to the user's existing Chrome debugging instance at `http://127.0.0.1:9222`, using fixed AI Chrome profile `C:\codex-chrome`.
+- Practical rule: prefer reusing this browser instance; do not automatically create a new built-in Chrome, temporary profile, or separate browser unless the user explicitly asks.
 
 ## Memory Policy
 
