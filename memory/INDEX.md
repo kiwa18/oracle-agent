@@ -4,6 +4,28 @@ Last updated: 2026-06-08 Asia/Shanghai
 
 This directory is the GitHub long-term memory layer for Codex and other AI agents. Use this file as the short entry index, then use `memory/STRUCTURE.md` for the full tree map.
 
+## Three Linked Indexes
+
+Keep these three indexes aligned:
+
+```text
+E-drive source index
+E:\codex\skills-memory\STRUCTURE.md
+E:\codex\skills-memory\codex-memory\references\memory.md
+```
+
+```text
+C-drive runtime index
+C:\Users\ASUS\.codex\skills\codex-memory\references\memory.md
+```
+
+```text
+GitHub durable index
+kiwa18/oracle-agent/memory/INDEX.md
+kiwa18/oracle-agent/memory/STRUCTURE.md
+kiwa18/oracle-agent/memory/policies/memory-sync-policy.md
+```
+
 ## Start Here
 
 - Full tree map: `memory/STRUCTURE.md`
@@ -43,6 +65,7 @@ E:\codex\skills-memory\codex-memory\references
 
 ```text
 E:\codex\skills-memory
+├─ STRUCTURE.md
 ├─ codex-memory
 ├─ gpt-architecture-review
 └─ real-time-context
