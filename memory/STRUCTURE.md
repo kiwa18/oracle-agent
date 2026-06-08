@@ -4,10 +4,35 @@ Last updated: 2026-06-08 Asia/Shanghai
 
 This file is the tree index for the linked Codex memory system. Use it to find the right memory file quickly without mixing project memory, daily preferences, prompts, and policy rules.
 
+## Three Linked Indexes
+
+The memory system has three linked indexes. Keep all three aligned:
+
+```text
+E-drive source index
+E:\codex\skills-memory\STRUCTURE.md
+E:\codex\skills-memory\codex-memory\references\memory.md
+```
+
+```text
+C-drive runtime index
+C:\Users\ASUS\.codex\skills\codex-memory\references\memory.md
+```
+
+```text
+GitHub durable index
+kiwa18/oracle-agent/memory/INDEX.md
+kiwa18/oracle-agent/memory/STRUCTURE.md
+kiwa18/oracle-agent/memory/policies/memory-sync-policy.md
+```
+
+When updating durable preferences, architecture rules, or memory structure, update E-drive and GitHub first when possible, then remind the user to sync C-drive if Codex cannot write it.
+
 ## Local / Global / GitHub Layers
 
 ```text
 E:\codex\skills-memory
+├─ STRUCTURE.md
 ├─ codex-memory
 │  ├─ SKILL.md
 │  ├─ agents
@@ -73,3 +98,4 @@ kiwa18/oracle-agent/memory
 ## Changelog
 
 - 2026-06-08: Created tree index for local, global, and GitHub memory structure.
+- 2026-06-08: Added explicit three-linked-index section for E-drive, C-drive, and GitHub memory indexes.
