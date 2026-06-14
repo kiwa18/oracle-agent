@@ -64,7 +64,15 @@ kiwa18/oracle-agent/memory
 ├─ INDEX.md           # short entry index
 ├─ STRUCTURE.md       # this tree map
 ├─ projects
-│  └─ a-share-event-backtest.md
+│  ├─ a-share-event-backtest.md
+│  ├─ code-claude-framework.md       # CODE×Claude 双层协作框架
+│  ├─ code-claude-memory-tree.txt    # 记忆目录树
+│  └─ code-claude-docs/              # 框架文档
+│     ├─ audit-logic.md              #   一致性审计逻辑
+│     ├─ heartbeat-monitor.md        #   心跳监控与兜底
+│     ├─ memory-architecture.md      #   记忆分层与隔离
+│     ├─ memory-index.md             #   全局记忆索引模板
+│     └─ role-definitions.md         #   角色定义
 └─ policies
    ├─ browser-connection-preferences.md
    ├─ daily-collaboration-memory.md
@@ -97,5 +105,6 @@ kiwa18/oracle-agent/memory
 
 ## Changelog
 
+- 2026-06-14: Added CODE×Claude双层协作框架 (code-claude-framework.md, code-claude-docs/, code-claude-memory-tree.txt)
 - 2026-06-08: Created tree index for local, global, and GitHub memory structure.
 - 2026-06-08: Added explicit three-linked-index section for E-drive, C-drive, and GitHub memory indexes.

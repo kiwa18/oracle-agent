@@ -1,0 +1,39 @@
+记忆目录树
+===========
+
+/home/ubuntu/.claude/projects/
+│
+├── -home-ubuntu-xiaoke/memory/      ← CODE 区（传输审核层）
+│   ├── MEMORY.md                    索引
+│   ├── role-guard.md                🔒 角色锁：CODE身份定义
+│   ├── session-handoff.md           ✏️ 会话交接：上次聊到哪
+│   ├── task-log.md                  ✏️ 任务档案：重试/审核/状态
+│   ├── wechat-memory.jsonl          ✏️ 微信记忆：重要/有趣的事
+│   └── user-profile.md              ✏️ 用户偏好（公用）
+│
+├── -home-ubuntu/memory/             ← Claude 区（数据落实层）
+│   ├── MEMORY.md                    索引
+│   ├── MEMORY_INDEX.md              🔒 全局记忆地图（启动加载）
+│   ├── code-claude-framework.md     🔒 协作框架（CODE只读）
+│   ├── data-source-log.md           ✏️ 数据来源日志
+│   ├── task-result-cache.md         ✏️ 任务结果缓存
+│   ├── user-profile.md              ✏️ 用户偏好（公用）
+│   ├── trading-agent-project-framework.md  QPSM项目框架
+│   ├── kline_patterns.md            K线形态规则库
+│   ├── deepseek_preference.md       DS API配置
+│   └── mobile_frontend.md           手机前端
+│
+└── -home-ubuntu-trading-agent/memory/ ← Trading 区
+    ├── MEMORY.md                    索引
+    ├── next-session-handoff.md      交易项目进度
+    ├── project-setup.md             项目全貌
+    ├── coding-mindset.md            TDX翻译思维
+    ├── security-policy.md           安全规则
+    ├── 2026-06-13-session.md        历史会话
+    └── codex-unavailability.md      Codex状态
+
+
+图例:
+🔒 = 不可覆盖/只读
+✏️ = 可写
+公用 = 双方都写

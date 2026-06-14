@@ -82,6 +82,15 @@ C:\Users\ASUS\.codex\skills
 
 ## Project Memory Files
 
+### CODE × Claude 双层协作框架
+
+- File: `memory/projects/code-claude-framework.md`
+- Docs: `memory/projects/code-claude-docs/`
+- Tree: `memory/projects/code-claude-memory-tree.txt`
+- Status: v1.0 — 角色定义、记忆隔离、一致性审计、心跳监控、兜底规则全线产出
+- Core: CODE(传输审核层)→微信, Claude/DeepSeek(数据落实层)→终端. 审核用多指标一致性审计而非低级格式检查. 记忆三层隔离(角色层锁死+会话层即焚+用户层公用). 15分钟无回应自拉数据.
+- Trigger: `CODE框架` `协作框架` `记忆隔离` `一致性审计` `微信桥接`
+
 ### A-share Event Backtest
 
 - File: `memory/projects/a-share-event-backtest.md`
